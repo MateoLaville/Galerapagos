@@ -7,123 +7,110 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/decrFood"
         android:layout_width="43dp"
         android:layout_height="35dp"
         app:backgroundTint="#FFFFFF"
         android:textColor="@color/black"
+        android:onClick="decrFood"
         android:text="-"
-        app:layout_constraintBottom_toBottomOf="@+id/textView3"
-        app:layout_constraintEnd_toStartOf="@+id/textView3"
-        app:layout_constraintTop_toTopOf="@+id/textView3" />
+        app:layout_constraintBottom_toBottomOf="@+id/food"
+        app:layout_constraintEnd_toStartOf="@+id/food"
+        app:layout_constraintTop_toTopOf="@+id/food" />
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/decrDay"
         android:layout_width="43dp"
         android:layout_height="35dp"
         app:backgroundTint="#FFFFFF"
         android:textColor="@color/black"
+        android:onClick="decrDay"
         android:text="-"
-        app:layout_constraintBottom_toBottomOf="@+id/textView12"
-        app:layout_constraintEnd_toStartOf="@+id/textView12"
-        app:layout_constraintTop_toTopOf="@+id/textView12" />
+        app:layout_constraintBottom_toBottomOf="@+id/day"
+        app:layout_constraintEnd_toStartOf="@+id/day"
+        app:layout_constraintTop_toTopOf="@+id/day" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/incrDay"
         android:layout_width="43dp"
         android:layout_height="35dp"
         app:backgroundTint="#FFFFFF"
         android:textColor="@color/black"
+        android:onClick="incrDay"
         android:text="+"
-        app:layout_constraintBottom_toBottomOf="@+id/textView12"
-        app:layout_constraintStart_toEndOf="@+id/textView12"
-        app:layout_constraintTop_toTopOf="@+id/textView12" />
+        app:layout_constraintBottom_toBottomOf="@+id/day"
+        app:layout_constraintStart_toEndOf="@+id/day"
+        app:layout_constraintTop_toTopOf="@+id/day" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/incrFood"
         android:layout_width="43dp"
         android:layout_height="35dp"
         app:backgroundTint="#FFFFFF"
         android:textColor="@color/black"
+        android:onClick="incrFood"
         android:text="+"
-        app:layout_constraintBottom_toBottomOf="@+id/textView3"
-        app:layout_constraintStart_toEndOf="@+id/textView3"
-        app:layout_constraintTop_toTopOf="@+id/textView3" />
+        app:layout_constraintBottom_toBottomOf="@+id/food"
+        app:layout_constraintStart_toEndOf="@+id/food"
+        app:layout_constraintTop_toTopOf="@+id/food" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/incrWater"
         android:layout_width="43dp"
         android:layout_height="35dp"
+        android:onClick="incrWater"
         android:text="+"
         android:textColor="@color/black"
         app:backgroundTint="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="@+id/textView4"
-        app:layout_constraintStart_toEndOf="@+id/textView4"
-        app:layout_constraintTop_toTopOf="@+id/textView4"
+        app:layout_constraintBottom_toBottomOf="@+id/water"
+        app:layout_constraintStart_toEndOf="@+id/water"
+        app:layout_constraintTop_toTopOf="@+id/water"
         app:layout_constraintVertical_bias="0.687" />
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/decrWater"
         android:layout_width="43dp"
         android:layout_height="35dp"
         app:backgroundTint="#FFFFFF"
         android:textColor="@color/black"
+        android:onClick="decrWater"
         android:text="-"
-        app:layout_constraintBottom_toBottomOf="@+id/textView4"
-        app:layout_constraintEnd_toStartOf="@+id/textView4"
-        app:layout_constraintTop_toTopOf="@+id/textView4"
+        app:layout_constraintBottom_toBottomOf="@+id/water"
+        app:layout_constraintEnd_toStartOf="@+id/water"
+        app:layout_constraintTop_toTopOf="@+id/water"
         app:layout_constraintVertical_bias="0.736" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/incrRaft"
         android:layout_width="43dp"
         android:layout_height="35dp"
-        app:backgroundTint="#FFFFFF"
-        android:textColor="@color/black"
+        android:layout_marginStart="4dp"
+        android:onClick="incrRaft"
         android:text="+"
-        app:layout_constraintBottom_toBottomOf="@+id/textView10"
-        app:layout_constraintStart_toEndOf="@+id/textView10"
-        app:layout_constraintTop_toTopOf="@+id/textView10" />
+        android:textColor="@color/black"
+        app:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/raft"
+        app:layout_constraintStart_toEndOf="@+id/raft"
+        app:layout_constraintTop_toTopOf="@+id/raft"
+        app:layout_constraintVertical_bias="0.538" />
 
     <Button
-        android:id="@+id/button13"
+        android:id="@+id/decrRaft"
         android:layout_width="43dp"
         android:layout_height="35dp"
         app:backgroundTint="#FFFFFF"
         android:textColor="@color/black"
+        android:onClick="decrRaft"
         android:text="-"
-        app:layout_constraintBottom_toBottomOf="@+id/textView10"
-        app:layout_constraintEnd_toStartOf="@+id/textView10"
-        app:layout_constraintTop_toTopOf="@+id/textView10"
-        app:layout_constraintVertical_bias="0.526" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="43dp"
-        android:layout_height="35dp"
-        app:backgroundTint="#FFFFFF"
-        android:textColor="@color/black"
-        android:text="+"
-        app:layout_constraintBottom_toBottomOf="@+id/textView8"
-        app:layout_constraintStart_toEndOf="@+id/textView8"
-        app:layout_constraintTop_toTopOf="@+id/textView8" />
-
-    <Button
-        android:id="@+id/button12"
-        android:layout_width="43dp"
-        android:layout_height="35dp"
-        app:backgroundTint="#FFFFFF"
-        android:textColor="@color/black"
-        android:text="-"
-        app:layout_constraintBottom_toBottomOf="@+id/textView8"
-        app:layout_constraintEnd_toStartOf="@+id/textView8"
-        app:layout_constraintTop_toTopOf="@+id/textView8"
+        app:layout_constraintBottom_toBottomOf="@+id/raft"
+        app:layout_constraintEnd_toStartOf="@+id/raft"
+        app:layout_constraintTop_toTopOf="@+id/raft"
         app:layout_constraintVertical_bias="0.47" />
 
     <TextView
-        android:id="@+id/textView8"
-        android:layout_width="9dp"
-        android:layout_height="21dp"
+        android:id="@+id/raft"
+        android:layout_width="20dp"
+        android:layout_height="22dp"
         android:layout_marginTop="24dp"
         android:text="0"
         app:layout_constraintEnd_toEndOf="@+id/textView7"
@@ -150,7 +137,7 @@
         android:layout_marginTop="88dp"
         android:text="Bois"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/food" />
 
     <TextView
         android:id="@+id/textView"
@@ -163,7 +150,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/food"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="29dp"
@@ -176,7 +163,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/wood"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -189,7 +176,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/water"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="6dp"
@@ -210,7 +197,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.534"
         app:layout_constraintStart_toEndOf="@+id/textView5"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/water" />
 
     <TextView
         android:id="@+id/textView9"
@@ -224,7 +211,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/day"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -236,7 +223,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/weather"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
@@ -257,26 +244,28 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/incrWood"
         android:layout_width="43dp"
         android:layout_height="35dp"
         app:backgroundTint="#FFFFFF"
         android:textColor="@color/black"
+        android:onClick="incrWood"
         android:text="+"
-        app:layout_constraintBottom_toBottomOf="@+id/textView6"
-        app:layout_constraintStart_toEndOf="@+id/textView6"
-        app:layout_constraintTop_toTopOf="@+id/textView6" />
+        app:layout_constraintBottom_toBottomOf="@+id/wood"
+        app:layout_constraintStart_toEndOf="@+id/wood"
+        app:layout_constraintTop_toTopOf="@+id/wood" />
 
     <Button
-        android:id="@+id/button11"
+        android:id="@+id/decrWood"
         android:layout_width="43dp"
         android:layout_height="35dp"
         app:backgroundTint="#FFFFFF"
         android:textColor="@color/black"
+        android:onClick="decrWood"
         android:text="-"
-        app:layout_constraintBottom_toBottomOf="@+id/textView6"
-        app:layout_constraintEnd_toStartOf="@+id/textView6"
-        app:layout_constraintTop_toTopOf="@+id/textView6"
+        app:layout_constraintBottom_toBottomOf="@+id/wood"
+        app:layout_constraintEnd_toStartOf="@+id/wood"
+        app:layout_constraintTop_toTopOf="@+id/wood"
         app:layout_constraintVertical_bias="0.473" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
