@@ -6,13 +6,15 @@ import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
     var weatherList = mutableListOf("0", "0", "0", "1", "1", "1", "2", "2", "2", "3", "3")
+    var woodChances = mutableListOf(true, false, false, false, false, false)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val weatherText: TextView = findViewById(R.id.weather)
         weatherList.shuffle()
+        woodChances.shuffle()
 
+        val weatherText: TextView = findViewById(R.id.weather)
         val index = (6..11).random()
         weatherList.add(index, "2 - Storm")
         weatherText.text = weatherList[0]
@@ -120,6 +122,46 @@ class MainActivity : AppCompatActivity() {
         }
 
         woodText.text = "$wood"
+    }
+
+    fun incrWoodToGet(view: android.view.View) {
+        val woodToGetText: TextView = findViewById(R.id.woodToGet)
+        var woodToGet = Integer.parseInt(woodToGetText.text.toString())
+
+        if(woodToGet < 5)
+            woodToGet++
+
+        woodToGetText.text = "$woodToGet"
+    }
+    fun decrWoodToGet(view: android.view.View) {
+        val woodToGetText: TextView = findViewById(R.id.woodToGet)
+        var woodToGet = Integer.parseInt(woodToGetText.text.toString())
+
+        if(woodToGet > 0)
+            woodToGet--
+
+        woodToGetText.text = "$woodToGet"
+    }
+    fun getWood(view: android.view.View) {
+        val woodToGetText: TextView = findViewById(R.id.woodToGet)
+        var woodToGet = Integer.parseInt(woodToGetText.text.toString())
+        val resultText: TextView = findViewById(R.id.result)
+        var newWoodChances = woodChances
+        var result = false
+        var success = ""
+
+        for(i in 1..woodToGet) {
+            val index = (0..newWoodChances.size).random()
+            result = (newWoodChances[index] || result)
+            newWoodChances.removeAt(index)
+        }
+
+        if(result)
+            success = "Perdu"
+        else
+            success = "Gagné"
+
+        resultText.text = success
     }
 
     fun incrRaft(view: android.view.View) {

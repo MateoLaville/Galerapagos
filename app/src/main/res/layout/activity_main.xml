@@ -255,6 +255,68 @@
         app:layout_constraintStart_toEndOf="@+id/wood"
         app:layout_constraintTop_toTopOf="@+id/wood" />
 
+    <TextView
+        android:id="@+id/woodToGet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="0"
+        app:layout_constraintEnd_toStartOf="@+id/incrWood"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/decrWood"
+        app:layout_constraintTop_toBottomOf="@+id/wood" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bois à aller chercher"
+        app:layout_constraintBottom_toTopOf="@+id/woodToGet"
+        app:layout_constraintEnd_toEndOf="@+id/incrWoodToGet"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="@+id/decrWoodToGet" />
+
+    <Button
+        android:id="@+id/decrWoodToGet"
+        android:layout_width="43dp"
+        android:layout_height="35dp"
+        android:onClick="decrWoodToGet"
+        android:text="-"
+        android:textColor="@color/black"
+        app:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/woodToGet"
+        app:layout_constraintEnd_toStartOf="@+id/woodToGet"
+        app:layout_constraintTop_toTopOf="@+id/woodToGet"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/incrWoodToGet"
+        android:layout_width="43dp"
+        android:layout_height="35dp"
+        android:onClick="incrWoodToGet"
+        android:text="+"
+        android:textColor="@color/black"
+        app:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/woodToGet"
+        app:layout_constraintStart_toEndOf="@+id/woodToGet"
+        app:layout_constraintTop_toTopOf="@+id/woodToGet"
+        app:layout_constraintVertical_bias="0.062" />
+
+    <Button
+        android:id="@+id/getWood"
+        android:layout_width="43dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="24dp"
+        android:onClick="getWood"
+        android:text="Ok"
+        android:textColor="@color/black"
+        android:textSize="7sp"
+        app:backgroundTint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/woodToGet"
+        app:layout_constraintHorizontal_bias="0.628"
+        app:layout_constraintStart_toStartOf="@+id/woodToGet"
+        app:layout_constraintTop_toBottomOf="@+id/woodToGet" />
+
     <Button
         android:id="@+id/decrWood"
         android:layout_width="43dp"
@@ -267,5 +329,16 @@
         app:layout_constraintEnd_toStartOf="@+id/wood"
         app:layout_constraintTop_toTopOf="@+id/wood"
         app:layout_constraintVertical_bias="0.473" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@+id/getWood"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="@+id/getWood"
+        app:layout_constraintTop_toBottomOf="@+id/getWood" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
