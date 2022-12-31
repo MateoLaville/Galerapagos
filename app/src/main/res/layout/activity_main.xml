@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,29 +8,6 @@
     android:background="@drawable/image222">
 
 
-    <Button
-        android:id="@+id/decrFood"
-        android:layout_width="43dp"
-        android:layout_height="35dp"
-        app:backgroundTint="#33FFFFFF"
-        android:textColor="@color/black"
-        android:onClick="decrFood"
-        android:text="-"
-        app:layout_constraintBottom_toBottomOf="@+id/food"
-        app:layout_constraintEnd_toStartOf="@+id/food"
-        app:layout_constraintTop_toTopOf="@+id/food" />
-
-    <Button
-        android:id="@+id/decrDay"
-        android:layout_width="43dp"
-        android:layout_height="35dp"
-        app:backgroundTint="#33FFFFFF"
-        android:textColor="@color/black"
-        android:onClick="decrDay"
-        android:text="-"
-        app:layout_constraintBottom_toBottomOf="@+id/day"
-        app:layout_constraintEnd_toStartOf="@+id/day"
-        app:layout_constraintTop_toTopOf="@+id/day" />
 
     <Button
         android:id="@+id/incrDay"
@@ -45,6 +22,66 @@
         app:layout_constraintTop_toTopOf="@+id/day" />
 
     <Button
+        android:id="@+id/decrDay"
+        android:layout_width="43dp"
+        android:layout_height="35dp"
+        app:backgroundTint="#33FFFFFF"
+        android:textColor="@color/black"
+        android:onClick="decrDay"
+        android:text="-"
+        app:layout_constraintBottom_toBottomOf="@+id/day"
+        app:layout_constraintEnd_toStartOf="@+id/day"
+        app:layout_constraintTop_toTopOf="@+id/day" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="48dp"
+        android:text="Jour"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:text="1"
+        app:layout_constraintEnd_toEndOf="@+id/textView11"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+
+
+   <TextView
+       android:id="@+id/textView9"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="52dp"
+       android:text="Météo"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.525"
+       app:layout_constraintStart_toEndOf="@+id/textView11"
+       app:layout_constraintTop_toTopOf="parent" />
+
+   <TextView
+       android:id="@+id/weather"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="28dp"
+       android:text="0"
+       app:layout_constraintEnd_toEndOf="@+id/textView9"
+       app:layout_constraintHorizontal_bias="0.59"
+       app:layout_constraintStart_toStartOf="@+id/textView9"
+       app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+
+
+    <Button
         android:id="@+id/incrFood"
         android:layout_width="43dp"
         android:layout_height="35dp"
@@ -55,6 +92,43 @@
         app:layout_constraintBottom_toBottomOf="@+id/food"
         app:layout_constraintStart_toEndOf="@+id/food"
         app:layout_constraintTop_toTopOf="@+id/food" />
+
+    <Button
+        android:id="@+id/decrFood"
+        android:layout_width="43dp"
+        android:layout_height="35dp"
+        app:backgroundTint="#33FFFFFF"
+        android:textColor="@color/black"
+        android:onClick="decrFood"
+        android:text="-"
+        app:layout_constraintBottom_toBottomOf="@+id/food"
+        app:layout_constraintEnd_toStartOf="@+id/food"
+        app:layout_constraintTop_toTopOf="@+id/food" />
+
+   <TextView
+       android:id="@+id/food"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="29dp"
+       android:layout_marginTop="24dp"
+       android:layout_marginEnd="27dp"
+       android:text="0"
+       app:layout_constraintEnd_toEndOf="@+id/textView"
+       app:layout_constraintHorizontal_bias="0.0"
+       app:layout_constraintStart_toStartOf="@+id/textView"
+       app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+   <TextView
+       android:id="@+id/textView"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="76dp"
+       android:layout_marginTop="272dp"
+       android:text="Nourriture"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent" />
+
+
 
     <Button
         android:id="@+id/incrWater"
@@ -82,44 +156,6 @@
         app:layout_constraintTop_toTopOf="@+id/water"
         app:layout_constraintVertical_bias="0.736" />
 
-    <Button
-        android:id="@+id/incrRaft"
-        android:layout_width="43dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="4dp"
-        android:onClick="incrRaft"
-        android:text="+"
-        android:textColor="@color/black"
-        app:backgroundTint="#33FFFFFF"
-        app:layout_constraintBottom_toBottomOf="@+id/raft"
-        app:layout_constraintStart_toEndOf="@+id/raft"
-        app:layout_constraintTop_toTopOf="@+id/raft"
-        app:layout_constraintVertical_bias="0.538" />
-
-    <Button
-        android:id="@+id/decrRaft"
-        android:layout_width="43dp"
-        android:layout_height="35dp"
-        app:backgroundTint="#33FFFFFF"
-        android:textColor="@color/black"
-        android:onClick="decrRaft"
-        android:text="-"
-        app:layout_constraintBottom_toBottomOf="@+id/raft"
-        app:layout_constraintEnd_toStartOf="@+id/raft"
-        app:layout_constraintTop_toTopOf="@+id/raft"
-        app:layout_constraintVertical_bias="0.47" />
-
-    <TextView
-        android:id="@+id/raft"
-        android:layout_width="20dp"
-        android:layout_height="22dp"
-        android:layout_marginTop="24dp"
-        android:text="0"
-        app:layout_constraintEnd_toEndOf="@+id/textView7"
-        app:layout_constraintHorizontal_bias="0.4"
-        app:layout_constraintStart_toStartOf="@+id/textView7"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
-
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
@@ -131,119 +167,20 @@
         app:layout_constraintStart_toEndOf="@+id/textView"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="96dp"
-        android:layout_marginTop="88dp"
-        android:text="Bois"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/food" />
+   <TextView
+       android:id="@+id/water"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="6dp"
+       android:layout_marginTop="24dp"
+       android:layout_marginEnd="6dp"
+       android:text="0"
+       app:layout_constraintEnd_toEndOf="@+id/textView2"
+       app:layout_constraintHorizontal_bias="1.0"
+       app:layout_constraintStart_toStartOf="@+id/textView2"
+       app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="76dp"
-        android:layout_marginTop="272dp"
-        android:text="Nourriture"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/food"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="29dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="27dp"
-        android:text="0"
-        app:layout_constraintEnd_toEndOf="@+id/textView"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <TextView
-        android:id="@+id/wood"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="9dp"
-        android:text="0"
-        app:layout_constraintEnd_toEndOf="@+id/textView5"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textView5"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
-
-    <TextView
-        android:id="@+id/water"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="6dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="6dp"
-        android:text="0"
-        app:layout_constraintEnd_toEndOf="@+id/textView2"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="88dp"
-        android:text="Radeaux"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.534"
-        app:layout_constraintStart_toEndOf="@+id/textView5"
-        app:layout_constraintTop_toBottomOf="@+id/water" />
-
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
-        android:text="Météo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.525"
-        app:layout_constraintStart_toEndOf="@+id/textView11"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/day"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="28dp"
-        android:text="1"
-        app:layout_constraintEnd_toEndOf="@+id/textView11"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textView11"
-        app:layout_constraintTop_toBottomOf="@+id/textView11" />
-
-    <TextView
-        android:id="@+id/weather"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:text="0"
-        app:layout_constraintEnd_toEndOf="@+id/textView9"
-        app:layout_constraintHorizontal_bias="0.59"
-        app:layout_constraintStart_toStartOf="@+id/textView9"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
-
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="84dp"
-        android:layout_marginTop="48dp"
-        android:text="Jour"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/incrWood"
@@ -256,6 +193,121 @@
         app:layout_constraintBottom_toBottomOf="@+id/wood"
         app:layout_constraintStart_toEndOf="@+id/wood"
         app:layout_constraintTop_toTopOf="@+id/wood" />
+
+    <Button
+        android:id="@+id/decrWood"
+        android:layout_width="43dp"
+        android:layout_height="35dp"
+        app:backgroundTint="#33FFFFFF"
+        android:textColor="@color/black"
+        android:onClick="decrWood"
+        android:text="-"
+        app:layout_constraintBottom_toBottomOf="@+id/wood"
+        app:layout_constraintEnd_toStartOf="@+id/wood"
+        app:layout_constraintTop_toTopOf="@+id/wood"
+        app:layout_constraintVertical_bias="0.473" />
+
+   <TextView
+       android:id="@+id/textView5"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="96dp"
+       android:layout_marginTop="88dp"
+       android:text="Bois"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/food" />
+
+   <TextView
+       android:id="@+id/wood"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="10dp"
+       android:layout_marginTop="24dp"
+       android:layout_marginEnd="9dp"
+       android:text="0"
+       app:layout_constraintEnd_toEndOf="@+id/textView5"
+       app:layout_constraintHorizontal_bias="0.0"
+       app:layout_constraintStart_toStartOf="@+id/textView5"
+       app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+
+
+   <Button
+       android:id="@+id/incrRaft"
+       android:layout_width="43dp"
+       android:layout_height="35dp"
+       android:layout_marginStart="4dp"
+       android:onClick="incrRaft"
+       android:text="+"
+       android:textColor="@color/black"
+       app:backgroundTint="#33FFFFFF"
+       app:layout_constraintBottom_toBottomOf="@+id/raft"
+       app:layout_constraintStart_toEndOf="@+id/raft"
+       app:layout_constraintTop_toTopOf="@+id/raft"
+       app:layout_constraintVertical_bias="0.538" />
+
+   <Button
+       android:id="@+id/decrRaft"
+       android:layout_width="43dp"
+       android:layout_height="35dp"
+       app:backgroundTint="#33FFFFFF"
+       android:textColor="@color/black"
+       android:onClick="decrRaft"
+       android:text="-"
+       app:layout_constraintBottom_toBottomOf="@+id/raft"
+       app:layout_constraintEnd_toStartOf="@+id/raft"
+       app:layout_constraintTop_toTopOf="@+id/raft"
+       app:layout_constraintVertical_bias="0.47" />
+
+   <TextView
+       android:id="@+id/textView7"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="88dp"
+       android:text="Radeaux"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.534"
+       app:layout_constraintStart_toEndOf="@+id/textView5"
+       app:layout_constraintTop_toBottomOf="@+id/water" />
+
+   <TextView
+       android:id="@+id/raft"
+       android:layout_width="20dp"
+       android:layout_height="22dp"
+       android:layout_marginTop="24dp"
+       android:text="0"
+       app:layout_constraintEnd_toEndOf="@+id/textView7"
+       app:layout_constraintHorizontal_bias="0.4"
+       app:layout_constraintStart_toStartOf="@+id/textView7"
+       app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+
+
+   <Button
+       android:id="@+id/incrWoodToGet"
+       android:layout_width="43dp"
+       android:layout_height="35dp"
+       android:onClick="incrWoodToGet"
+       android:text="+"
+       android:textColor="@color/black"
+       app:backgroundTint="#33FFFFFF"
+       app:layout_constraintBottom_toBottomOf="@+id/woodToGet"
+       app:layout_constraintStart_toEndOf="@+id/woodToGet"
+       app:layout_constraintTop_toTopOf="@+id/woodToGet"
+       app:layout_constraintVertical_bias="0.062" />
+
+   <Button
+       android:id="@+id/decrWoodToGet"
+       android:layout_width="43dp"
+       android:layout_height="35dp"
+       android:onClick="decrWoodToGet"
+       android:text="-"
+       android:textColor="@color/black"
+       app:backgroundTint="#33FFFFFF"
+       app:layout_constraintBottom_toBottomOf="@+id/woodToGet"
+       app:layout_constraintEnd_toStartOf="@+id/woodToGet"
+       app:layout_constraintTop_toTopOf="@+id/woodToGet"
+       app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/woodToGet"
@@ -270,47 +322,23 @@
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Bois à aller chercher"
+        android:layout_width="140dp"
+        android:layout_height="24dp"
+        android:text="Bois souhaité"
         app:layout_constraintBottom_toTopOf="@+id/woodToGet"
         app:layout_constraintEnd_toEndOf="@+id/incrWoodToGet"
         app:layout_constraintHorizontal_bias="0.545"
         app:layout_constraintStart_toStartOf="@+id/decrWoodToGet" />
 
-    <Button
-        android:id="@+id/decrWoodToGet"
-        android:layout_width="43dp"
-        android:layout_height="35dp"
-        android:onClick="decrWoodToGet"
-        android:text="-"
-        android:textColor="@color/black"
-        app:backgroundTint="#33FFFFFF"
-        app:layout_constraintBottom_toBottomOf="@+id/woodToGet"
-        app:layout_constraintEnd_toStartOf="@+id/woodToGet"
-        app:layout_constraintTop_toTopOf="@+id/woodToGet"
-        app:layout_constraintVertical_bias="0.0" />
 
-    <Button
-        android:id="@+id/incrWoodToGet"
-        android:layout_width="43dp"
-        android:layout_height="35dp"
-        android:onClick="incrWoodToGet"
-        android:text="+"
-        android:textColor="@color/black"
-        app:backgroundTint="#33FFFFFF"
-        app:layout_constraintBottom_toBottomOf="@+id/woodToGet"
-        app:layout_constraintStart_toEndOf="@+id/woodToGet"
-        app:layout_constraintTop_toTopOf="@+id/woodToGet"
-        app:layout_constraintVertical_bias="0.062" />
 
     <Button
         android:id="@+id/getWood"
-        android:layout_width="43dp"
-        android:layout_height="35dp"
+        android:layout_width="73dp"
+        android:layout_height="38dp"
         android:layout_marginTop="24dp"
         android:onClick="getWood"
-        android:text="Ok"
+        android:text="Essayer"
         android:textColor="@color/black"
         android:textSize="7sp"
         app:backgroundTint="#33FFFFFF"
@@ -318,19 +346,6 @@
         app:layout_constraintHorizontal_bias="0.628"
         app:layout_constraintStart_toStartOf="@+id/woodToGet"
         app:layout_constraintTop_toBottomOf="@+id/woodToGet" />
-
-    <Button
-        android:id="@+id/decrWood"
-        android:layout_width="43dp"
-        android:layout_height="35dp"
-        app:backgroundTint="#33FFFFFF"
-        android:textColor="@color/black"
-        android:onClick="decrWood"
-        android:text="-"
-        app:layout_constraintBottom_toBottomOf="@+id/wood"
-        app:layout_constraintEnd_toStartOf="@+id/wood"
-        app:layout_constraintTop_toTopOf="@+id/wood"
-        app:layout_constraintVertical_bias="0.473" />
 
     <TextView
         android:id="@+id/result"
