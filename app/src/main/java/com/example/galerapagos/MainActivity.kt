@@ -20,6 +20,10 @@ class MainActivity : AppCompatActivity() {
         weatherText.text = weatherList[0]
     }
 
+    /* // // // // // // // //
+        // Jour & Meteo //
+    // // // // // // // // */
+
     fun incrDay(view: android.view.View) {
         val dayText: TextView = findViewById(R.id.day)
         val weatherText: TextView = findViewById(R.id.weather)
@@ -46,6 +50,10 @@ class MainActivity : AppCompatActivity() {
         dayText.text = "$day"
         weatherText.text = weather
     }
+
+    /* // // // // // // // // // //
+        // Nourriture & Eau //
+    // // // // // // // // // // */
 
     fun incrFood(view: android.view.View) {
         val foodText: TextView = findViewById(R.id.food)
@@ -84,6 +92,10 @@ class MainActivity : AppCompatActivity() {
 
         waterText.text = "$water"
     }
+
+    /* // // // // // // // // // //
+        // Bois & Radeaux //
+    // // // // // // // // // // */
 
     fun incrWood(view: android.view.View) {
         val woodText: TextView = findViewById(R.id.wood)
