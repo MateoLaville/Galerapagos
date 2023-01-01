@@ -91,60 +91,11 @@
        app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
 
-
-    <Button
-        android:id="@+id/incrFood"
-        android:layout_width="43dp"
-        android:layout_height="35dp"
-        app:backgroundTint="#33FFFFFF"
-        android:textColor="@color/black"
-        android:onClick="incrFood"
-        android:text="+"
-        app:layout_constraintBottom_toBottomOf="@+id/food"
-        app:layout_constraintStart_toEndOf="@+id/food"
-        app:layout_constraintTop_toTopOf="@+id/food" />
-
-    <Button
-        android:id="@+id/decrFood"
-        android:layout_width="43dp"
-        android:layout_height="35dp"
-        app:backgroundTint="#33FFFFFF"
-        android:textColor="@color/black"
-        android:onClick="decrFood"
-        android:text="-"
-        app:layout_constraintBottom_toBottomOf="@+id/food"
-        app:layout_constraintEnd_toStartOf="@+id/food"
-        app:layout_constraintTop_toTopOf="@+id/food" />
-
-   <TextView
-       android:id="@+id/food"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:layout_marginStart="29dp"
-       android:layout_marginTop="24dp"
-       android:layout_marginEnd="27dp"
-       android:text="0"
-       app:layout_constraintEnd_toEndOf="@+id/textView"
-       app:layout_constraintHorizontal_bias="0.0"
-       app:layout_constraintStart_toStartOf="@+id/textView"
-       app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-   <TextView
-       android:id="@+id/textView"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:layout_marginStart="76dp"
-       android:layout_marginTop="272dp"
-       android:text="Nourriture"
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toTopOf="parent" />
-
-
-
     <Button
         android:id="@+id/incrWater"
         android:layout_width="43dp"
         android:layout_height="35dp"
+        android:layout_marginStart="8dp"
         android:onClick="incrWater"
         android:text="+"
         android:textColor="@color/black"
@@ -152,211 +103,263 @@
         app:layout_constraintBottom_toBottomOf="@+id/water"
         app:layout_constraintStart_toEndOf="@+id/water"
         app:layout_constraintTop_toTopOf="@+id/water"
-        app:layout_constraintVertical_bias="0.687" />
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/water"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="6dp"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/incrFood"
+        android:layout_width="43dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="12dp"
+        android:onClick="incrFood"
+        android:text="+"
+        android:textColor="@color/black"
+        app:backgroundTint="#33FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/food"
+        app:layout_constraintStart_toEndOf="@+id/food"
+        app:layout_constraintTop_toTopOf="@+id/food"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/decrWater"
         android:layout_width="43dp"
         android:layout_height="35dp"
-        app:backgroundTint="#33FFFFFF"
-        android:textColor="@color/black"
+        android:layout_marginEnd="8dp"
         android:onClick="decrWater"
         android:text="-"
+        android:textColor="@color/black"
+        app:backgroundTint="#33FFFFFF"
         app:layout_constraintBottom_toBottomOf="@+id/water"
         app:layout_constraintEnd_toStartOf="@+id/water"
         app:layout_constraintTop_toTopOf="@+id/water"
-        app:layout_constraintVertical_bias="0.736" />
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="204dp"
+        android:text="Nourriture"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/decrFood"
+        android:layout_width="43dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="12dp"
+        android:onClick="decrFood"
+        android:text="-"
+        android:textColor="@color/black"
+        app:backgroundTint="#33FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/food"
+        app:layout_constraintEnd_toStartOf="@+id/food"
+        app:layout_constraintTop_toTopOf="@+id/food"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="272dp"
+        android:layout_marginTop="204dp"
         android:text="Eau"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toEndOf="@+id/textView"
         app:layout_constraintTop_toTopOf="parent" />
 
-   <TextView
-       android:id="@+id/water"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:layout_marginStart="6dp"
-       android:layout_marginTop="24dp"
-       android:layout_marginEnd="6dp"
-       android:text="0"
-       app:layout_constraintEnd_toEndOf="@+id/textView2"
-       app:layout_constraintHorizontal_bias="1.0"
-       app:layout_constraintStart_toStartOf="@+id/textView2"
-       app:layout_constraintTop_toBottomOf="@+id/textView2" />
+    <TextView
+        android:id="@+id/food"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="27dp"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
 
+    <TextView
+        android:id="@+id/raft"
+        android:layout_width="20dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="28dp"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="@+id/textView7"
+        app:layout_constraintHorizontal_bias="0.352"
+        app:layout_constraintStart_toStartOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
     <Button
-        android:id="@+id/incrWood"
+        android:id="@+id/incrRaft"
         android:layout_width="43dp"
         android:layout_height="35dp"
-        app:backgroundTint="#33FFFFFF"
-        android:textColor="@color/black"
-        android:onClick="incrWood"
+        android:layout_marginStart="16dp"
+        android:onClick="incrRaft"
         android:text="+"
-        app:layout_constraintBottom_toBottomOf="@+id/wood"
-        app:layout_constraintStart_toEndOf="@+id/wood"
-        app:layout_constraintTop_toTopOf="@+id/wood" />
+        android:textColor="@color/black"
+        app:backgroundTint="#33FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/raft"
+        app:layout_constraintStart_toEndOf="@+id/raft"
+        app:layout_constraintTop_toTopOf="@+id/raft"
+        app:layout_constraintVertical_bias="0.846" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="232dp"
+        android:text="Radeaux"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.584"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/water" />
 
     <Button
         android:id="@+id/decrWood"
         android:layout_width="43dp"
         android:layout_height="35dp"
-        app:backgroundTint="#33FFFFFF"
-        android:textColor="@color/black"
+        android:layout_marginEnd="4dp"
         android:onClick="decrWood"
         android:text="-"
+        android:textColor="@color/black"
+        app:backgroundTint="#33FFFFFF"
         app:layout_constraintBottom_toBottomOf="@+id/wood"
         app:layout_constraintEnd_toStartOf="@+id/wood"
         app:layout_constraintTop_toTopOf="@+id/wood"
-        app:layout_constraintVertical_bias="0.473" />
+        app:layout_constraintVertical_bias="0.687" />
 
-   <TextView
-       android:id="@+id/textView5"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:layout_marginStart="96dp"
-       android:layout_marginTop="88dp"
-       android:text="Bois"
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toBottomOf="@+id/food" />
-
-   <TextView
-       android:id="@+id/wood"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:layout_marginStart="10dp"
-       android:layout_marginTop="24dp"
-       android:layout_marginEnd="9dp"
-       android:text="0"
-       app:layout_constraintEnd_toEndOf="@+id/textView5"
-       app:layout_constraintHorizontal_bias="0.0"
-       app:layout_constraintStart_toStartOf="@+id/textView5"
-       app:layout_constraintTop_toBottomOf="@+id/textView5" />
-
-
-
-   <Button
-       android:id="@+id/incrRaft"
-       android:layout_width="43dp"
-       android:layout_height="35dp"
-       android:layout_marginStart="4dp"
-       android:onClick="incrRaft"
-       android:text="+"
-       android:textColor="@color/black"
-       app:backgroundTint="#33FFFFFF"
-       app:layout_constraintBottom_toBottomOf="@+id/raft"
-       app:layout_constraintStart_toEndOf="@+id/raft"
-       app:layout_constraintTop_toTopOf="@+id/raft"
-       app:layout_constraintVertical_bias="0.538" />
-
-   <Button
-       android:id="@+id/decrRaft"
-       android:layout_width="43dp"
-       android:layout_height="35dp"
-       app:backgroundTint="#33FFFFFF"
-       android:textColor="@color/black"
-       android:onClick="decrRaft"
-       android:text="-"
-       app:layout_constraintBottom_toBottomOf="@+id/raft"
-       app:layout_constraintEnd_toStartOf="@+id/raft"
-       app:layout_constraintTop_toTopOf="@+id/raft"
-       app:layout_constraintVertical_bias="0.47" />
-
-   <TextView
-       android:id="@+id/textView7"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:layout_marginTop="88dp"
-       android:text="Radeaux"
-       app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintHorizontal_bias="0.534"
-       app:layout_constraintStart_toEndOf="@+id/textView5"
-       app:layout_constraintTop_toBottomOf="@+id/water" />
-
-   <TextView
-       android:id="@+id/raft"
-       android:layout_width="20dp"
-       android:layout_height="22dp"
-       android:layout_marginTop="24dp"
-       android:text="0"
-       app:layout_constraintEnd_toEndOf="@+id/textView7"
-       app:layout_constraintHorizontal_bias="0.4"
-       app:layout_constraintStart_toStartOf="@+id/textView7"
-       app:layout_constraintTop_toBottomOf="@+id/textView7" />
-
-
-
-   <Button
-       android:id="@+id/incrWoodToSearch"
-       android:layout_width="43dp"
-       android:layout_height="35dp"
-       android:onClick="incrWoodToSearch"
-       android:text="+"
-       android:textColor="@color/black"
-       app:backgroundTint="#33FFFFFF"
-       app:layout_constraintBottom_toBottomOf="@+id/woodToSearch"
-       app:layout_constraintStart_toEndOf="@+id/woodToSearch"
-       app:layout_constraintTop_toTopOf="@+id/woodToSearch"
-       app:layout_constraintVertical_bias="0.062" />
-
-   <Button
-       android:id="@+id/decrWoodToSearch"
-       android:layout_width="43dp"
-       android:layout_height="35dp"
-       android:onClick="decrWoodToSearch"
-       android:text="-"
-       android:textColor="@color/black"
-       app:backgroundTint="#33FFFFFF"
-       app:layout_constraintBottom_toBottomOf="@+id/woodToSearch"
-       app:layout_constraintEnd_toStartOf="@+id/woodToSearch"
-       app:layout_constraintTop_toTopOf="@+id/woodToSearch"
-       app:layout_constraintVertical_bias="0.0" />
+    <Button
+        android:id="@+id/incrWoodToSearch"
+        android:layout_width="43dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="12dp"
+        android:onClick="incrWoodToSearch"
+        android:text="+"
+        android:textColor="@color/black"
+        app:backgroundTint="#33FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/woodToSearch"
+        app:layout_constraintStart_toEndOf="@+id/woodToSearch"
+        app:layout_constraintTop_toTopOf="@+id/woodToSearch"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/woodToSearch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="52dp"
         android:text="0"
         app:layout_constraintEnd_toStartOf="@+id/incrWood"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.625"
         app:layout_constraintStart_toEndOf="@+id/decrWood"
         app:layout_constraintTop_toBottomOf="@+id/wood" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="232dp"
+        android:text="Bois"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/food" />
+
+    <Button
+        android:id="@+id/incrWood"
+        android:layout_width="43dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="20dp"
+        android:onClick="incrWood"
+        android:text="+"
+        android:textColor="@color/black"
+        app:backgroundTint="#33FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/wood"
+        app:layout_constraintStart_toEndOf="@+id/wood"
+        app:layout_constraintTop_toTopOf="@+id/wood"
+        app:layout_constraintVertical_bias="0.687" />
+
+    <Button
+        android:id="@+id/decrRaft"
+        android:layout_width="43dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="20dp"
+        android:onClick="decrRaft"
+        android:text="-"
+        android:textColor="@color/black"
+        app:backgroundTint="#33FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/raft"
+        app:layout_constraintEnd_toStartOf="@+id/raft"
+        app:layout_constraintTop_toTopOf="@+id/raft"
+        app:layout_constraintVertical_bias="0.692" />
+
+    <Button
+        android:id="@+id/decrWoodToSearch"
+        android:layout_width="43dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="32dp"
+        android:onClick="decrWoodToSearch"
+        android:text="-"
+        android:textColor="@color/black"
+        app:backgroundTint="#33FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/woodToSearch"
+        app:layout_constraintEnd_toStartOf="@+id/woodToSearch"
+        app:layout_constraintTop_toTopOf="@+id/woodToSearch"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="165dp"
         android:layout_height="23dp"
+        android:layout_marginBottom="4dp"
         android:text="Quantité bois recherchée"
         app:layout_constraintBottom_toTopOf="@+id/woodToSearch"
         app:layout_constraintEnd_toEndOf="@+id/incrWoodToSearch"
-        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="@+id/decrWoodToSearch" />
-
-
 
     <Button
         android:id="@+id/searchWood"
         android:layout_width="73dp"
         android:layout_height="38dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:onClick="searchWood"
         android:text="Chercher"
         android:textColor="@color/black"
         android:textSize="7sp"
         app:backgroundTint="#33FFFFFF"
         app:layout_constraintEnd_toEndOf="@+id/woodToSearch"
-        app:layout_constraintHorizontal_bias="0.628"
+        app:layout_constraintHorizontal_bias="0.538"
         app:layout_constraintStart_toStartOf="@+id/woodToSearch"
         app:layout_constraintTop_toBottomOf="@+id/woodToSearch" />
+
+    <TextView
+        android:id="@+id/wood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="9dp"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="@+id/textView5"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <TextView
         android:id="@+id/result"
@@ -369,6 +372,26 @@
         app:layout_constraintStart_toStartOf="@+id/searchWood"
         app:layout_constraintTop_toBottomOf="@+id/searchWood" />
 
+ <Button
+     android:id="@+id/button"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_marginStart="56dp"
+     android:layout_marginTop="284dp"
+     android:onClick="toFish"
+     android:text="Pêcher"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toTopOf="parent" />
+
+ <TextView
+     android:id="@+id/fish"
+     android:layout_width="0dp"
+     android:layout_height="16dp"
+     android:layout_marginTop="356dp"
+     app:layout_constraintEnd_toEndOf="@+id/button"
+     app:layout_constraintHorizontal_bias="1.0"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

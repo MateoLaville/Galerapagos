@@ -7,6 +7,7 @@ import android.widget.TextView
 class MainActivity : AppCompatActivity() {
     var weatherList = mutableListOf("0", "0", "0", "1", "1", "1", "2", "2", "2", "3", "3")
     var woodChances = mutableListOf(1, 0, 0, 0, 0, 0)
+    var fishList = mutableListOf(1, 1, 1, 2, 2, 3)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -73,6 +74,12 @@ class MainActivity : AppCompatActivity() {
             food--
 
         foodText.text = "$food"
+    }
+    fun toFish(view: android.view.View) {
+        val fishText: TextView = findViewById(R.id.fish)
+        var fish = fishList.random()
+
+        fishText.text = "$fish" + " poisson(s) pêché(s) !"
     }
 
     fun incrWater(view: android.view.View) {
