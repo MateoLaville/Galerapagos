@@ -6,7 +6,8 @@ import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
     var weatherList = mutableListOf("0", "0", "0", "1", "1", "1", "2", "2", "2", "3", "3")
-    var woodChances = mutableListOf(true, false, false, false, false, false)
+    var woodChances = mutableListOf(1, 0, 0, 0, 0, 0)
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -16,7 +17,7 @@ class MainActivity : AppCompatActivity() {
 
         val weatherText: TextView = findViewById(R.id.weather)
         val index = (6..11).random()
-        weatherList.add(index, "2 - Storm")
+        weatherList.add(index, "2 - Tempête")
         weatherText.text = weatherList[0]
     }
 
@@ -159,20 +160,17 @@ class MainActivity : AppCompatActivity() {
         val woodToSearchText: TextView = findViewById(R.id.woodToSearch)
         var woodToSearch = Integer.parseInt(woodToSearchText.text.toString())
         val resultText: TextView = findViewById(R.id.result)
-        var newWoodChances = woodChances
-        var result = false
-        var success = ""
+        var result = 0
+        var success = "Réussite !"
 
-        for(i in 1..woodToSearch) {
-            val index = (0..newWoodChances.size).random()
-            result = (newWoodChances[index] || result)
-            newWoodChances.removeAt(index)
+        woodChances.shuffle()
+
+
+        for(i in 0 until woodToSearch) {
+            result += woodChances[i]
         }
-
-        if(result)
-            success = "Perdu"
-        else
-            success = "Gagné"
+         if (result == 1)
+             success = "Echec ! Vous êtes empoisonné..."
 
         resultText.text = success
     }
