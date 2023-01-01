@@ -284,33 +284,33 @@
 
 
    <Button
-       android:id="@+id/incrWoodToGet"
+       android:id="@+id/incrWoodToSearch"
        android:layout_width="43dp"
        android:layout_height="35dp"
-       android:onClick="incrWoodToGet"
+       android:onClick="incrWoodToSearch"
        android:text="+"
        android:textColor="@color/black"
        app:backgroundTint="#33FFFFFF"
-       app:layout_constraintBottom_toBottomOf="@+id/woodToGet"
-       app:layout_constraintStart_toEndOf="@+id/woodToGet"
-       app:layout_constraintTop_toTopOf="@+id/woodToGet"
+       app:layout_constraintBottom_toBottomOf="@+id/woodToSearch"
+       app:layout_constraintStart_toEndOf="@+id/woodToSearch"
+       app:layout_constraintTop_toTopOf="@+id/woodToSearch"
        app:layout_constraintVertical_bias="0.062" />
 
    <Button
-       android:id="@+id/decrWoodToGet"
+       android:id="@+id/decrWoodToSearch"
        android:layout_width="43dp"
        android:layout_height="35dp"
-       android:onClick="decrWoodToGet"
+       android:onClick="decrWoodToSearch"
        android:text="-"
        android:textColor="@color/black"
        app:backgroundTint="#33FFFFFF"
-       app:layout_constraintBottom_toBottomOf="@+id/woodToGet"
-       app:layout_constraintEnd_toStartOf="@+id/woodToGet"
-       app:layout_constraintTop_toTopOf="@+id/woodToGet"
+       app:layout_constraintBottom_toBottomOf="@+id/woodToSearch"
+       app:layout_constraintEnd_toStartOf="@+id/woodToSearch"
+       app:layout_constraintTop_toTopOf="@+id/woodToSearch"
        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/woodToGet"
+        android:id="@+id/woodToSearch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
@@ -322,30 +322,30 @@
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="140dp"
-        android:layout_height="24dp"
-        android:text="Bois souhaité"
-        app:layout_constraintBottom_toTopOf="@+id/woodToGet"
-        app:layout_constraintEnd_toEndOf="@+id/incrWoodToGet"
+        android:layout_width="165dp"
+        android:layout_height="23dp"
+        android:text="Quantité bois recherchée"
+        app:layout_constraintBottom_toTopOf="@+id/woodToSearch"
+        app:layout_constraintEnd_toEndOf="@+id/incrWoodToSearch"
         app:layout_constraintHorizontal_bias="0.545"
-        app:layout_constraintStart_toStartOf="@+id/decrWoodToGet" />
+        app:layout_constraintStart_toStartOf="@+id/decrWoodToSearch" />
 
 
 
     <Button
-        android:id="@+id/getWood"
+        android:id="@+id/searchWood"
         android:layout_width="73dp"
         android:layout_height="38dp"
         android:layout_marginTop="24dp"
-        android:onClick="getWood"
-        android:text="Essayer"
+        android:onClick="searchWood"
+        android:text="Chercher"
         android:textColor="@color/black"
         android:textSize="7sp"
         app:backgroundTint="#33FFFFFF"
-        app:layout_constraintEnd_toEndOf="@+id/woodToGet"
+        app:layout_constraintEnd_toEndOf="@+id/woodToSearch"
         app:layout_constraintHorizontal_bias="0.628"
-        app:layout_constraintStart_toStartOf="@+id/woodToGet"
-        app:layout_constraintTop_toBottomOf="@+id/woodToGet" />
+        app:layout_constraintStart_toStartOf="@+id/woodToSearch"
+        app:layout_constraintTop_toBottomOf="@+id/woodToSearch" />
 
     <TextView
         android:id="@+id/result"
@@ -353,9 +353,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:text=""
-        app:layout_constraintEnd_toEndOf="@+id/getWood"
+        app:layout_constraintEnd_toEndOf="@+id/searchWood"
         app:layout_constraintHorizontal_bias="0.533"
-        app:layout_constraintStart_toStartOf="@+id/getWood"
-        app:layout_constraintTop_toBottomOf="@+id/getWood" />
+        app:layout_constraintStart_toStartOf="@+id/searchWood"
+        app:layout_constraintTop_toBottomOf="@+id/searchWood" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -136,33 +136,34 @@ class MainActivity : AppCompatActivity() {
         woodText.text = "$wood"
     }
 
-    fun incrWoodToGet(view: android.view.View) {
-        val woodToGetText: TextView = findViewById(R.id.woodToGet)
-        var woodToGet = Integer.parseInt(woodToGetText.text.toString())
 
-        if(woodToGet < 5)
-            woodToGet++
+    fun incrWoodToSearch(view: android.view.View) {
+        val woodToSearchText: TextView = findViewById(R.id.woodToSearch)
+        var woodToSearch = Integer.parseInt(woodToSearchText.text.toString())
 
-        woodToGetText.text = "$woodToGet"
+        if(woodToSearch < 5)
+            woodToSearch++
+
+        woodToSearchText.text = "$woodToSearch"
     }
-    fun decrWoodToGet(view: android.view.View) {
-        val woodToGetText: TextView = findViewById(R.id.woodToGet)
-        var woodToGet = Integer.parseInt(woodToGetText.text.toString())
+    fun decrWoodToSearch(view: android.view.View) {
+        val woodToSearchText: TextView = findViewById(R.id.woodToSearch)
+        var woodToSearch = Integer.parseInt(woodToSearchText.text.toString())
 
-        if(woodToGet > 0)
-            woodToGet--
+        if(woodToSearch > 0)
+            woodToSearch--
 
-        woodToGetText.text = "$woodToGet"
+        woodToSearchText.text = "$woodToSearch"
     }
-    fun getWood(view: android.view.View) {
-        val woodToGetText: TextView = findViewById(R.id.woodToGet)
-        var woodToGet = Integer.parseInt(woodToGetText.text.toString())
+    fun searchWood(view: android.view.View) {
+        val woodToSearchText: TextView = findViewById(R.id.woodToSearch)
+        var woodToSearch = Integer.parseInt(woodToSearchText.text.toString())
         val resultText: TextView = findViewById(R.id.result)
         var newWoodChances = woodChances
         var result = false
         var success = ""
 
-        for(i in 1..woodToGet) {
+        for(i in 1..woodToSearch) {
             val index = (0..newWoodChances.size).random()
             result = (newWoodChances[index] || result)
             newWoodChances.removeAt(index)
@@ -175,6 +176,7 @@ class MainActivity : AppCompatActivity() {
 
         resultText.text = success
     }
+
 
     fun incrRaft(view: android.view.View) {
         val raftText: TextView = findViewById(R.id.raft)
