@@ -20,7 +20,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/day"
         app:layout_constraintStart_toEndOf="@+id/day"
         app:layout_constraintTop_toTopOf="@+id/day" />
-
+<!--
     <Button
         android:id="@+id/decrDay"
         android:layout_width="43dp"
@@ -32,6 +32,16 @@
         app:layout_constraintBottom_toBottomOf="@+id/day"
         app:layout_constraintEnd_toStartOf="@+id/day"
         app:layout_constraintTop_toTopOf="@+id/day" />
+-->
+    <ImageButton
+        android:id="@+id/decrDay"
+        android:layout_width="52dp"
+        android:layout_height="50dp"
+        android:background="@drawable/precedent"
+        android:onClick="decrDay"
+        app:layout_constraintBottom_toBottomOf="@+id/day"
+        app:layout_constraintEnd_toStartOf="@+id/day"
+        app:layout_constraintTop_toTopOf="@+id/day" />
 
     <TextView
         android:id="@+id/textView11"
@@ -40,6 +50,7 @@
         android:layout_marginStart="84dp"
         android:layout_marginTop="48dp"
         android:text="Jour"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
