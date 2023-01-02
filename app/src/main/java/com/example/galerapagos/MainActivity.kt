@@ -14,7 +14,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         weatherList.shuffle()
-        woodChances.shuffle()
 
         val weatherText: TextView = findViewById(R.id.weather)
         val index = (6..11).random()

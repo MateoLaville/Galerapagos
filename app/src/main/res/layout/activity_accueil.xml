@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Accueil"
+    android:background="@drawable/image222">
+
+    <Button
+        android:id="@+id/jouer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="628dp"
+        android:text="Jouer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="333dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/logo_galerapagos" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="323dp"
+        android:layout_height="424dp"
+        android:layout_marginTop="24dp"
+        android:text="  Après le naufrage de votre bateau, votre groupe de survivants se retrouve sur une île déserte où l’eau et la nourriture se font rares. Seule solution pour échapper à ce cauchemar : construire ensemble un grand radeau pour embarquer les survivants, mais le temps presse car un ouragan pointe à l’horizon... \n \n
+
+
+A chaque tour les joueurs naufragés devront choisir une action parmi quatre : pêcher, recueillir de l’eau, chercher du bois ou fouiller l’épave du bateau."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

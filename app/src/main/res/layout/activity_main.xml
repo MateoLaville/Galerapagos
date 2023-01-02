@@ -39,7 +39,6 @@
         android:layout_marginStart="84dp"
         android:layout_marginTop="48dp"
         android:text="Jour"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -47,11 +46,9 @@
         android:id="@+id/day"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="24dp"
         android:text="1"
         app:layout_constraintEnd_toEndOf="@+id/textView11"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/textView11"
         app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
@@ -291,10 +288,10 @@
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="165dp"
-        android:layout_height="23dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:text="Quantité bois recherchée"
+        android:text="Quantité bois recherchée :"
         app:layout_constraintEnd_toEndOf="@+id/incrWood"
         app:layout_constraintHorizontal_bias="0.467"
         app:layout_constraintStart_toStartOf="@+id/decrWood"
