@@ -32,11 +32,22 @@
         android:layout_width="323dp"
         android:layout_height="424dp"
         android:layout_marginTop="24dp"
+        android:background="#80F6DEBC"
         android:text="  Après le naufrage de votre bateau, votre groupe de survivants se retrouve sur une île déserte où l’eau et la nourriture se font rares. Seule solution pour échapper à ce cauchemar : construire ensemble un grand radeau pour embarquer les survivants, mais le temps presse car un ouragan pointe à l’horizon... \n \n
 
 
 A chaque tour les joueurs naufragés devront choisir une action parmi quatre : pêcher, recueillir de l’eau, chercher du bois ou fouiller l’épave du bateau."
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/purple_700"
+        android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--
+            android:shadowColor="@color/white"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="3"
+            -->

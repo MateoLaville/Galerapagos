@@ -36,8 +36,8 @@
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="84dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="40dp"
         android:text="Jour"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -53,19 +53,17 @@
         app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
 
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="98dp"
+        android:text="Météo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-   <TextView
-       android:id="@+id/textView9"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:layout_marginTop="52dp"
-       android:text="Météo"
-       app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintHorizontal_bias="0.525"
-       app:layout_constraintStart_toEndOf="@+id/textView11"
-       app:layout_constraintTop_toTopOf="parent" />
-
-   <TextView
+    <TextView
        android:id="@+id/weather"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
@@ -155,12 +153,12 @@
         android:layout_height="wrap_content"
         android:text="Eau"
         app:layout_constraintBottom_toBottomOf="@+id/textView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toEndOf="@+id/textView"
-        app:layout_constraintTop_toTopOf="@+id/textView" />
+        app:layout_constraintEnd_toEndOf="@+id/textView9"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0" />
 
- <TextView
+    <TextView
      android:id="@+id/food"
      android:layout_width="wrap_content"
      android:layout_height="wrap_content"
