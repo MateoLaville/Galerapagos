@@ -1,7 +1,9 @@
 package com.example.galerapagos
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
@@ -19,6 +21,11 @@ class MainActivity : AppCompatActivity() {
         val index = (6..11).random()
         weatherList.add(index, "2 - Tempête")
         weatherText.text = weatherList[0]
+    }
+
+    fun rejouer(view: android.view.View) {
+        val intent = Intent(this, MainActivity::class.java)
+        startActivity(intent)
     }
 
     /* // // // // // // // //
