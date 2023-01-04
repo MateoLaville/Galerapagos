@@ -18,14 +18,43 @@ class MainActivity : AppCompatActivity() {
         weatherList.shuffle()
 
         val weatherText: TextView = findViewById(R.id.weather)
-        val index = (6..11).random()
-        weatherList.add(index, "2 - Tempête")
+        val indexStorm = (6..11).random()
+        weatherList.add(indexStorm, "2 - Tempête")
         weatherText.text = weatherList[0]
     }
 
     fun rejouer(view: android.view.View) {
-        val intent = Intent(this, MainActivity::class.java)
-        startActivity(intent)
+
+        weatherList.removeAll(setOf("2 - Tempête"))
+        weatherList.shuffle()
+
+        val weatherText: TextView = findViewById(R.id.weather)
+        val newIndexStorm = (6..11).random()
+        weatherList.add(newIndexStorm, "2 - Tempête")
+        weatherText.text = weatherList[0]
+
+        val dayText: TextView = findViewById(R.id.day)
+        val foodText: TextView = findViewById(R.id.food)
+        val waterText: TextView = findViewById(R.id.water)
+        val woodText: TextView = findViewById(R.id.wood)
+        val raftText: TextView = findViewById(R.id.raft)
+
+        val fishText: TextView = findViewById(R.id.fish)
+
+        val woodToSearchText: TextView = findViewById(R.id.woodToSearch)
+        val resultWoodText: TextView = findViewById(R.id.resultWood)
+
+
+        dayText.text = "1"
+        foodText.text = "0"
+        waterText.text = "0"
+        woodText.text = "0"
+        raftText.text = "0"
+
+        fishText.text = ""
+
+        woodToSearchText.text = "0"
+        resultWoodText.text = ""
     }
 
     /* // // // // // // // //
@@ -172,20 +201,20 @@ class MainActivity : AppCompatActivity() {
     fun searchWood(view: android.view.View) {
         val woodToSearchText: TextView = findViewById(R.id.woodToSearch)
         var woodToSearch = Integer.parseInt(woodToSearchText.text.toString())
-        val resultText: TextView = findViewById(R.id.result)
-        var result = 0
+        val resultWoodText: TextView = findViewById(R.id.resultWood)
+        var resultWood = 0
         var success = "Réussite !"
 
         woodChances.shuffle()
 
 
         for(i in 0 until woodToSearch) {
-            result += woodChances[i]
+            resultWood += woodChances[i]
         }
-         if (result == 1)
+         if (resultWood == 1)
              success = "Echec ! Vous êtes empoisonné..."
 
-        resultText.text = success
+        resultWoodText.text = success
     }
 
 
