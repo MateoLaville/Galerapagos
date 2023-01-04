@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/logoGalerapagos"
         android:layout_width="333dp"
         android:layout_height="107dp"
         android:layout_marginTop="28dp"
@@ -28,21 +28,32 @@
         app:srcCompat="@mipmap/logo_galerapagos" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/introduction"
         android:layout_width="323dp"
         android:layout_height="424dp"
         android:layout_marginTop="24dp"
-        android:background="#80F6DEBC"
-        android:text="  Après le naufrage de votre bateau, votre groupe de survivants se retrouve sur une île déserte où l’eau et la nourriture se font rares. Seule solution pour échapper à ce cauchemar : construire ensemble un grand radeau pour embarquer les survivants, mais le temps presse car un ouragan pointe à l’horizon... \n \n
-
-
-A chaque tour les joueurs naufragés devront choisir une action parmi quatre : pêcher, recueillir de l’eau, chercher du bois ou fouiller l’épave du bateau."
+        android:scrollbars = "vertical"
+        android:text="     Après le naufrage de votre bateau, votre groupe de survivants se retrouve
+sur une île déserte où l’eau et la nourriture se font rares. Seule solution pour échapper à ce
+cauchemar : construire ensemble un grand radeau pour embarquer les survivants, mais le temps presse
+car un ouragan pointe à l’horizon... \n\n
+     A chaque tour les joueurs naufragés devront choisir une action parmi quatre : pêcher,
+recueillir de l’eau, chercher du bois ou fouiller l’épave du bateau.\n\n
+     Pour pêcher, appuyez sur le bouton ''Pêcher'', puis ajoutez le résultat au compteur de
+nourriture en appuyant sur ''+''. \n\n
+     Pour receillir de l'eau, ajoutez au compteur d'eau la quantité indiquée sous
+''Météo''.\n\n
+     Pour chercher du bois, commencez par ajouter 1 au compteur de bois, puis si vous voulez
+tenter votre chance et aller plus loin, indiquez la quantité supplémentaire de bois que vous
+souhaitez rechercher et appuyez sur ''chercher'', si c'est une réussite ajoutez les bois recherchés
+au compteur de bois, sinon vous êtes empoisonné et ne pouvez faire aucune action le jour suivant.\n\n
+     Pour fouiller l'épave, ça se passe en dehors de l'application, piochez dans le jeu de cartes. "
         android:textAppearance="@style/TextAppearance.AppCompat.Small"
         android:textColor="@color/purple_700"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/logoGalerapagos" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 
     <!--
