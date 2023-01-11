@@ -44,7 +44,6 @@ class MainActivity : AppCompatActivity() {
         val woodToSearchText: TextView = findViewById(R.id.woodToSearch)
         val resultWoodText: TextView = findViewById(R.id.resultWood)
 
-
         dayText.text = "1"
         foodText.text = "0"
         waterText.text = "0"

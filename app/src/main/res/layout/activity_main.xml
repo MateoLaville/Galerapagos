@@ -325,6 +325,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:text=""
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="@+id/searchWood"
         app:layout_constraintHorizontal_bias="0.464"
         app:layout_constraintStart_toStartOf="@+id/searchWood"
@@ -346,6 +347,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:text=""
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="@+id/button"
         app:layout_constraintStart_toStartOf="@+id/button"
         app:layout_constraintTop_toBottomOf="@+id/button" />
@@ -371,6 +374,17 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/textView6"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <Button
+        android:id="@+id/sauver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="Sauver"
+        app:layout_constraintBottom_toBottomOf="@+id/rejouer"
+        app:layout_constraintEnd_toStartOf="@+id/rejouer"
+        app:layout_constraintTop_toTopOf="@+id/rejouer"
+        app:layout_constraintVertical_bias="0.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
